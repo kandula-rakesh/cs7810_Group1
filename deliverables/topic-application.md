@@ -25,6 +25,6 @@
   - **Timeliness:** Tries to solve a current problem.
   - **Audience:** Doctors, patients, nurses etc.
 
-    ** Potential Datasets: **
+    **Potential Datasets:**
     - Dataset from WSU faculty
     - https://www.kaggle.com/datasets/daspias/multiple-disease-dataset
