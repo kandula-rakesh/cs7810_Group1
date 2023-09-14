@@ -23,4 +23,8 @@
   - **Merit:** It would be intellectually challenging, and challenging to find data.
   - **Novelty:** Likely.
   - **Timeliness:** Tries to solve a current problem.
-  - **Audience:** Doctors, patients, nurses etc. 
+  - **Audience:** Doctors, patients, nurses etc.
+
+    ** Potential Datasets: **
+    - Dataset from WSU faculty
+    - https://www.kaggle.com/datasets/daspias/multiple-disease-dataset
