@@ -21,3 +21,4 @@
 * Finalize competency questions
 
 ## Contributors
+* Rakesh Kandula
