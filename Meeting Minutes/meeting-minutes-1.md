@@ -19,6 +19,7 @@
 
 ## Next Meeting
 * Finalize competency questions
+* Define the scope of the KG
 
 ## Contributors
 * Rakesh Kandula
