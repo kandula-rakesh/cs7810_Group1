@@ -2,7 +2,7 @@
 
 ## Attendees
 * Chaitanya Anumula  
-* Skler Gentner
+* Skyler Gentner
 * Calvin Greenewald
 * Rakesh Kandula
 
@@ -22,4 +22,5 @@
 
 ## Contributors
 * Rakesh Kandula
-* Calvin Greenewald 
+* Calvin Greenewald
+* Skyler Gentner
