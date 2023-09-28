@@ -3,10 +3,16 @@
 I am text of the narrative [0]. There should be references included [1]. May be embedded in a sentence [2], and they precede punctuation [1].
 
 ## Competency Questions
-* Competency Question<br>
-Bridges Datasets: dataset 1, dataset 2, ...
-* Competency Question<br>
-Bridges Datasets: dataset 1, dataset 2, ...
+* How many people are travelling?<br>
+Bridges Datasets: [Find Datasets\]
+* What mode of transportation do the tourist want to use to reach their destination? (plane, car, bus, etc.)<br>
+Bridges Datasets: [Find Datasets\]
+* What are the tourist's budget?<br>
+Bridges Datasets: [Find Datasets\]
+* What are the tourist's travelling interests? (Beach, Mountain, Forest, etc.)<br>
+Bridges Datasets: [Find Datasets\]
+* What type of housing do the tourist's want to stay in? (Hotel, AirBnB, Cabin, etc.)<br>
+Bridges Datasets: [Find Datasets\]
 * Competency Question<br>
 Bridges Datasets: dataset 1, dataset 2, ...
 
