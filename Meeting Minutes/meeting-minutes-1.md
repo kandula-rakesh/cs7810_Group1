@@ -9,7 +9,6 @@
 ## Agenda
 9/26/23
 * Discuss use-case.md and assign work in order to complete it
-* Discuss scope
 
 ## Note/Comments
 * Scope is within the US
@@ -31,6 +30,14 @@
 ## Next Meeting
 * Finalize competency questions
 * Further discuss the scope of the KG
+
+## Updates on 9/28
+
+* Discussed the scope of Knowledge Graph.
+* Prepared the intial draft of the narrative.
+* Came up with few competency questions.
+* Found out the literature on travel knowledge graphs
+  
 
 ## Contributors
 * Rakesh Kandula
