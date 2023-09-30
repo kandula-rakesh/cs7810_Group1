@@ -16,6 +16,8 @@
   - https://www.kaggle.com/datasets/ishbhms/travel-review-ratings
   - https://www.kaggle.com/datasets/ayushggarg/international-tourism-demographics
   - https://www.unwto.org/tourism-statistics/key-tourism-statistics
+  - https://catalog.data.gov/dataset/trips-by-distance
+  - https://rosap.ntl.bts.gov/gsearch?ref=docDetails&related_series=American%20Travel%20Survey%20%28ATS%29
   
 ## Health Prediction
 
