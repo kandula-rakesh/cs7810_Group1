@@ -13,6 +13,16 @@ Bridges Datasets: [Find Datasets\]
 Bridges Datasets: [Find Datasets\]
 * What type of housing do the tourist's want to stay in? (Hotel, AirBnB, Cabin, etc.)<br>
 Bridges Datasets: [Find Datasets\]
+* How far does the tourist want to travel ? (places nearby them or distant)<br>
+Bridges Datasets: [Find Datasets\]
+* How long does the tourist want the trip to last ? (short trips/long weekends or vacations)<br>
+Bridges Datasets: [Find Datasets\]
+* If they want to travel in any particular season/special events (ex: best place to celebrate a festival or attend a concert or best summer vacation spots etc)<br>
+Bridges Datasets: [Find Datasets\]
+* Whether they are interested in guided/planned travel packages or a trip on their own<br>
+Bridges Datasets: [Find Datasets\]
+* What activities they want to do during the trip ? (ex: sky-diving, hiking, boating etc)<br>
+Bridges Datasets: [Find Datasets\]
 * Competency Question<br>
 Bridges Datasets: dataset 1, dataset 2, ...
 
