@@ -25,12 +25,24 @@ I am text of the narrative [0]. There should be references included [1]. May be 
 * What coastal destinations offer pristine beaches, clear waters, and a relaxed atmosphere?
 * Which areas would be good destinations for food lovers?
 * Eco-friendly and sustainable travel options, including accommodations and activities?
+* Destinations which include tour guide packages?
 
 ## Potential Datasets
 * Tourism Satellite Accounts: https://www.bea.gov/data/special-topics/travel-and-tourism/tourism-satellite-accounts-data-sheets
 * Tourism Statistics: https://www.unwto.org/tourism-statistics/key-tourism-statistics
 * Trips by distance: https://catalog.data.gov/dataset/trips-by-distance
 * American Travel Survey: https://rosap.ntl.bts.gov/gsearch?ref=docDetails&related_series=American%20Travel%20Survey%20%28ATS%29
+* https://catalog.data.gov/dataset/air-traffic-passenger-statistics
+* https://www.bea.gov/data/special-topics/travel-and-tourism/tourism-satellite-accounts-data-sheets
+* https://catalog.data.gov/dataset/trips-by-distance
+* https://rosap.ntl.bts.gov/gsearch?ref=docDetails&related_series=American%20Travel%20Survey%20%28ATS%29
+* Various hotel/Airbnb rating datasets on Kaggle
+* https://www.gooutsidebook.com/articles/national-park-visitation.html
+
+
+## Existing Resources
+* Travel Attractions Recommendation with Knowledge Graphs: https://link.springer.com/chapter/10.1007/978-3-319-49004-5_27
+* Travel Attractions Recommendation with Travel Spatial-Temporal Knowledge Graphs: https://link.springer.com/chapter/10.1007/978-981-13-2206-8_19
 
 ## References
 <!-- References should follow a consistent format. They should appear in order of appearance in the narrative section. Remove this comment. -->
@@ -42,3 +54,4 @@ I am text of the narrative [0]. There should be references included [1]. May be 
 
 ## Contributors
 * Chaitanya Anumula
+* Calvin Greenewald 
