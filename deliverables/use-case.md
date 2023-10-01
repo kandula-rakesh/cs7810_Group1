@@ -59,4 +59,5 @@ The topic of travel and vacations comes up frequently for many individuals and f
 
 ## Contributors
 * Chaitanya Anumula
-* Calvin Greenewald 
+* Calvin Greenewald
+* Skyler Gentner
