@@ -47,3 +47,4 @@
 
 ## Contributors
 * Calvin Greenewald
+* Skyler Gentner
