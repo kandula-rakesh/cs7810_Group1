@@ -16,12 +16,12 @@
 ## Assign Actions
 ### Determine Usability for datasets
 * Make sure we have the necessary data to answer the competency questions
-* Assigned to: Anumula
-* Due: 10/5
+* Assigned to: Chaitanya Anumula
+* Due: 10/10
 
 ### Competency Questions 
 * Modify the competency questions
-* Assigned to: Kandula
+* Assigned to: Rakesh Kandula
 * Due: 10/5
 
 ### Key-Notions 
@@ -49,3 +49,4 @@
 * Calvin Greenewald
 * Skyler Gentner
 * Rakesh Kandula
+* Chaitanya Anumula
