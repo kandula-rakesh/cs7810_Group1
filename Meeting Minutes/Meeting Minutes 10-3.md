@@ -36,7 +36,7 @@
 * Date completed: 9/28/23
 
 ### Narrative
-* Wrote the NArrative for use-case
+* Wrote the Narrative for use-case
 * Completed by: Greenewald
 * Date completed: 9/29/23
 
