@@ -34,6 +34,18 @@ The topic of travel and vacations comes up frequently for many individuals and f
 * Eco-friendly and sustainable travel options, including accommodations and activities?
 * Destinations which include tour guide packages?
 
+## New Questions:
+* How to query the Knowledge Graph (KG) to get the details of the location, tourist is visting? (expected_input: state, popular city, popular tourist destination, expected_output: details of the location includes, activities, popular tourist spots, accomodation etc).
+* How user can decide the mode of the transport (X), given his/her  budget (B)? (expected_input: float value, output: transport modes)
+* what are the activities(A) can be performed, in the location(Y), for eg: kayaking, rafting, sky-diving, trekking etc. (this can be further filtered by using Budget (B) as the constraint.)
+* List all the locations(Y), if user is interested to participate in specific activity(A), sorted the prices from low to high.
+* List all the tourist spots (TS), for the given location (Y). Eg: Beaches, Mountains, National Parks and Monuments, Buildings etc. (this can be further filtered by using Budget (B) as the constraint).
+* What type of accomodations/Housing (H) availble in Budget (B) for the location (Y).
+* How user can search nearby places/tourist attractions?(input: tourist_location, output: nearby locations) (depends on data supports this or not?)
+* Querying the KG, based on preferred activities for the current season.
+* Which are the destinations offer pristine beaches, clear waters or water activities.
+* Which location offers multi cuisine restaraunts, suitable for food lovers.
+
 ## Potential Datasets
 * Tourism Satellite Accounts: https://www.bea.gov/data/special-topics/travel-and-tourism/tourism-satellite-accounts-data-sheets
 * Tourism Statistics: https://www.unwto.org/tourism-statistics/key-tourism-statistics
