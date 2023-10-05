@@ -1,8 +1,10 @@
-* Knowledge Graph
+* Specifications of Location
+  * Having an understanding of the location where the tourist is going helps in having a better experience of the trip.
   * Connected Pattern:
   * Source Datasets:
     
 * Transport
+  * Figuring out what mode of transportation works well with the budget keeps the traveler planned
   * Connected Pattern:
   * Source Datasets: 
 
