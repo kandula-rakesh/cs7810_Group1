@@ -16,7 +16,7 @@
   * Source Datasets: 
 
 * Location
-  * 
+  * Given the users activity interest they could choose from different locations that offer some or all of the activities.
   * Connected Pattern:
   * Source Datasets: 
 
