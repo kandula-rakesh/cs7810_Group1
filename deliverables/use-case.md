@@ -10,31 +10,6 @@ The topic of travel and vacations comes up frequently for many individuals and f
 
 
 ## Competency Questions
-* How many people are travelling?
-* What mode of transportation do the tourist want to use to reach their destination? (plane, car, bus, etc.)
-* What are the tourist's budget?
-* What are the tourist's travelling interests? (Beach, Mountain, Forest, etc.)
-* What type of housing do the tourist's want to stay in? (Hotel, AirBnB, Cabin, etc.)
-* How far does the tourist want to travel ? (places nearby them or distant)
-* How long does the tourist want the trip to last ? (short trips/long weekends or vacations)
-* If they want to travel in any particular season/special events (ex: best place to celebrate a festival or attend a concert or best summer vacation spots etc)
-* Whether they are interested in guided/planned travel packages or a trip on their own
-* What activities they want to do during the trip ? (ex: sky-diving, hiking, boating etc)
-
-## Possible Competeny Questions
-* Destinations that are ideal for a family with young children and a moderate budget?
-* What are some cost-effective transportation options for a solo traveler looking to explore national parks?
-* What destinations offer a mix of cultural experiences and outdoor adventures for a multi-week vacation?
-* Which destinations are known for their vibrant music scenes and historical significance?
-* What are some destinations that are perfect for adrenaline junkies seeking extreme sports and outdoor thrills?
-* What family-oriented activities can be enjoyed in the during a week-long vacation?
-* Which US national parks are best visited during the fall for picturesque foliage and mild weather?
-* What coastal destinations offer pristine beaches, clear waters, and a relaxed atmosphere?
-* Which areas would be good destinations for food lovers?
-* Eco-friendly and sustainable travel options, including accommodations and activities?
-* Destinations which include tour guide packages?
-
-## New Questions:
 * How to query the Knowledge Graph (KG) to get the details of the location, tourist is visting? (expected_input: state, popular city, popular tourist destination, expected_output: details of the location includes, activities, popular tourist spots, accomodation etc).
 * How user can decide the mode of the transport (X), given his/her  budget (B)? (expected_input: float value, output: transport modes)
 * what are the activities(A) can be performed, in the location(Y), for eg: kayaking, rafting, sky-diving, trekking etc. (this can be further filtered by using Budget (B) as the constraint.)
