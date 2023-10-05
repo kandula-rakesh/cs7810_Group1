@@ -36,5 +36,6 @@
 * Completed: 10/5
 
 ## Contributors
-* Calvin Greenewald 
+* Calvin Greenewald
+* Skyler Gentner
 
