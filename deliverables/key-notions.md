@@ -7,7 +7,7 @@
   * Source Datasets: 
 
 * Budget
-  * Depending on how high or low the user's budget is they will provided them with less or fewer options to travel to
+  * Depending on how high or low the user's budget is they will be provided with more or fewer options to travel to.
   * Connected Pattern:
   * Source Datasets: 
 
