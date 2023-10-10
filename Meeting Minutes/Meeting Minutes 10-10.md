@@ -7,7 +7,8 @@
 * Rakesh Kandula
 
 ## Note/Comments
-* A large portion of previously found data is unusable. Does not address the scope 
+* A large portion of previously found data is unusable. Does not address the scope
+* Change scope 
 
 ## Agenda
 * Work on key-notions
