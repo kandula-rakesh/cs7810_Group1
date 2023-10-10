@@ -15,13 +15,9 @@
 * Work on data
 
 ## Assign Actions
-### Determine usability for datasets
-* Make sure we have the necessary data to answer the competency questions
-* Assigned to: Anumula
-* Due: 10/10
 
 ### Key-notions
-* Work on key-notions submission: Patterns and cooresponding dataasets 
+* Work on key-notions submission: Patterns and cooresponding datasets 
 * Assigned to: All
 * Due: 10/10
 
@@ -35,6 +31,11 @@
 * Get rid of .DS_Store, .idea files and get rid of the unused competency questions in the use-case
 * Assigned to: Kandula and Gentner
 * Completed: 10/5
+
+### Determine usability for datasets
+* Make sure we have the necessary data to answer the competency questions
+* Assigned to: Anumula
+* Due: 10/10
 
 ## Contributors
 * Calvin Greenewald
