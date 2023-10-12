@@ -25,4 +25,5 @@
 * Completed: 10/12
 
 ## Contributors
-* Calvin Greenewald 
+* Calvin Greenewald
+* Chaitanya Anumula
