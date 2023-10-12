@@ -13,16 +13,22 @@
 * Work on key notions 
 
 ## Assign Actions
-### Key notions
-* Work on key-notions submission: Patterns and cooresponding datasets
+### Schema Diagrams 
+* Work on the required schema documents
 * Assigned to: All
-* Due: 10/10
+* Due: 10/24
 
 ## Completed Actions
 ### Find Datasets
 * Find datasets we can use to answer the competency questions
 * Assigned to: All
 * Completed: 10/12
+
+### Key notions
+* Work on key-notions submission: Patterns and cooresponding datasets
+* Assigned to: All
+* Due: 10/10
+
 
 ## Contributors
 * Calvin Greenewald
