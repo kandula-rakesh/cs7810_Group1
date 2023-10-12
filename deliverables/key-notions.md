@@ -31,7 +31,7 @@
 * Housing
   * Having differnt housing options available for users is vital for ensuring a comfortable and budget friendly stay during the trip.
   * Connected Pattern: Class-Instance Pattern
-  * Source Datasets: [Airbnb Dataset]()
+  * Source Datasets: [Berlin Airbnb Dataset]
 
 * Food
   * Different destinations offer diverse culinary experiences. Understanding the food options available in a location allows travelers to explore and savor the local cuisine, which for food lovers is often a highlight of the trip.
