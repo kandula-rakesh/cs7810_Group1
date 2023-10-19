@@ -30,3 +30,4 @@
 * Calvin Greenewald
 * Skyler Gentner
 * Chaitanya Anumula
+* Rakesh Kandula
