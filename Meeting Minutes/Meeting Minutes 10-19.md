@@ -27,4 +27,5 @@
 ## Completed Actions
 
 ## Contributors
-* Calvin Greenewald 
+* Calvin Greenewald
+* Skyler Gentner
