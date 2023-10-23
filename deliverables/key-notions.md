@@ -38,3 +38,5 @@
   * Connected Pattern: [Provenance](https://github.com/kastle-lab/modular-ontology-design-library/blob/master/modl/provenance), [Temporal extent](https://github.com/kastle-lab/modular-ontology-design-library/blob/master/modl/temporal-extent)
   * Source Datasets: [Restaurant info](https://www.kaggle.com/datasets/damienbeneschi/krakow-ta-restaurans-data-raw/) and [Tour Dataset](http://tour-pedia.org/about/datasets.html)
 
+## Contributors
+* Rakesh Kandula
