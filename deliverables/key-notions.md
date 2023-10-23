@@ -1,6 +1,6 @@
 * Specifications of Location
   * Having an understanding of the location where the tourist is going helps in having a better experience of the trip.
-  * Connected Pattern: [SpatialObject](
+  * Connected Pattern: [SpatialObject]()
   * Source Datasets: [Tour Dataset](http://tour-pedia.org/about/datasets.html)
     
 * Transport
