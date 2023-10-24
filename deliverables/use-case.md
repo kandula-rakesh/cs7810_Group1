@@ -42,10 +42,3 @@ The topic of travel and vacations comes up frequently for many individuals and f
 [1] “Tourism in the United States of America.” WorldData.info.  https://www.worlddata.info/america/usa/tourism.php. [Accessed 30 September 2023]. 
 
 [2] Chelsea Ong. “People are Getting Travel Ideas From Social Media – Often With Hilarious Results.” CNBC, 26 April 2022. https://www.cnbc.com/2022/04/26/what-happens-when-people-use-tiktok-and-instagram-to-make-travel-plans.html. [Accessed 27 September 2023]. 
-
-
-## Contributors
-* Chaitanya Anumula
-* Calvin Greenewald
-* Rakesh Kandula
-* Skyler Gentner
