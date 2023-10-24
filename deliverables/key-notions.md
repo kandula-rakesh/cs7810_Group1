@@ -37,7 +37,3 @@
   * Different destinations offer diverse culinary experiences. Understanding the food options available in a location allows travelers to explore and savor the local cuisine, which for food lovers is often a highlight of the trip. For travelers who appreciate culinary adventures, discovering the local cuisine is a significant aspect of their journey. Different destinations provide unique and diverse culinary traditions. Understanding the food options available in a location ensures that food enthusiasts can indulge in the flavors and culinary delights of the region, enhancing their overall travel experience by savoring the local gastronomy.
   * Connected Pattern: [Provenance](https://github.com/kastle-lab/modular-ontology-design-library/blob/master/modl/provenance), [Temporal extent](https://github.com/kastle-lab/modular-ontology-design-library/blob/master/modl/temporal-extent)
   * Source Datasets: [Restaurant info](https://www.kaggle.com/datasets/damienbeneschi/krakow-ta-restaurans-data-raw/) and [Tour Dataset](http://tour-pedia.org/about/datasets.html)
-
-## Contributors
-* Rakesh Kandula
-* Chaitanya Anumula
