@@ -1,4 +1,4 @@
-﻿Amsterdam,realSum,room_private,person_capacity,cleanliness_rating,guest_satisfaction_overall,bedrooms,lng,lat
+﻿Location,realSum,room_private,person_capacity,cleanliness_rating,guest_satisfaction_overall,bedrooms,lng,lat
 Amsterdam,194.0336981,TRUE,2,10,93,1,4.90569,52.41772
 Amsterdam,344.245776,TRUE,4,8,85,1,4.90005,52.37432
 Amsterdam,264.1014224,TRUE,2,9,87,1,4.97512,52.36103
