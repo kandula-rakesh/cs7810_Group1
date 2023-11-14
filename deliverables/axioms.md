@@ -16,8 +16,8 @@
 "An accomodation has some reviews"
 * `Accomodation SubClassOf isLocatedAt exactly 1 location` <br />
 "An accomodation has exactly one location"
-* `Accomodation SubClassOf isCategory true/false if category is accomodation` <br />
-"If an accomodation has a category that is accomodation then isCategory is true, otherwise isCategory is false"
+* `Accomodation SubClassOf isCategory exactly 1 Category` <br />
+"An Accomodation has a exactly one category"
 * `Accomodation SubClassOf hasCost exactly 1 FinancialResource` <br />
 "An accomodation has exactly one cost of FinancialResource"
 * `Accomodation SubClassOf hasGeometry exactly 1 Geometry` <br />
