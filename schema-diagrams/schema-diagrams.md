@@ -14,3 +14,6 @@
 
 ## Location
 ![Location](./schema-diagrams/LocationSchema1.png)
+
+## Transport Schema Diagram
+![Image of Transport Schema](Transport.png "Transport Schema")
