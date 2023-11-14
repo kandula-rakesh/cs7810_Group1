@@ -44,3 +44,4 @@
 
 ## Contributors
 * Chaitanya Anumula
+* Skyler Gentner
