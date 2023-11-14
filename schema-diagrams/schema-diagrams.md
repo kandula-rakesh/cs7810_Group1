@@ -1,19 +1,19 @@
 # Schema Diagrams
 
 ## Accomodation
-![Accomodation](./schema-diagrams/Accomodation.jpg)
+![Accomodation](./Accomodation.jpg)
 
 ## Activities
-![Activities](./schema-diagrams/Activity.png)
+![Activities](./Activity.png)
 
 ## Financial Resource
-![Financial-Resource](./schema-diagrams/FinancialResource.png)
+![Financial-Resource](./FinancialResource.png)
 
 ## Food
-![Food](./schema-diagrams/Food.png)
+![Food](./Food.png)
 
 ## Location
-![Location](./schema-diagrams/LocationSchema1.png)
+![Location](./LocationSchema1.png)
 
 ## Transport Schema Diagram
-![Image of Transport Schema](Transport.png "Transport Schema")
+![Transport](./Transport.jpg)
