@@ -31,4 +31,5 @@
 ## Contributors
 * Chaitanya Anumula
 * Skyler Gentner
+* Rakesh Kandula
 * Calvin Greenewald 
