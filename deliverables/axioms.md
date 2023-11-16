@@ -73,7 +73,15 @@ natural language description
 ![Transport](../schema-diagrams/Transport.jpg)
 
 ### Axioms
-* `axiom in manchester syntax` <br />
-natural language description
-* `axiom in manchester syntax` <br />
-natural language description
+* `Transport SubClassOf hasID some xsd:integer` <br />
+"A transport has an ID represented by an integer value"
+* `Transport SubClassOf hasName some xsd:string` <br />
+"A transport has a name represented by a string value"
+* `Transport SubClassOf hasDetails some Details` <br />
+"A transport has some details"
+* `Transport SubClassOf hasReviews some Reviews` <br />
+"A transport has some reviews"
+* `Transport SubClassOf isCategory exactly 1 Category` <br />
+"A Transport has a exactly one category"
+* `Transport SubClassOf hasCost exactly 1 FinancialResource` <br />
+"A transport has exactly one cost of FinancialResource"
