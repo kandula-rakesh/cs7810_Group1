@@ -55,10 +55,22 @@ natural language description
 ![Food](../schema-diagrams/Food.png)
 
 ### Axioms
-* `axiom in manchester syntax` <br />
-natural language description
-* `axiom in manchester syntax` <br />
-natural language description
+* `Food/Restaurant SubClassOf hasRanking some xsd:int` <br />
+"A Restaurant/Food has a ranking represented by an integer value"
+* `Restaurant/Food SubClassOf hasName some rdfs:Literal` <br />
+"A Restaurant/Food has a name represented by a string value"
+* `Restaurant/Food SubClassOf hasRating some xsd:Decimal` <br />
+"A Restaurant/Food has some rating represented by a decimal value"
+* `Restaurant/Food SubClassOf hasFoodCategory some rdfs:Literal` <br />
+"A Restaurant/Food has some Food Category represented by a string value"
+* `Restaurant/Food SubClassOf isLocatedAt exactly 1 location` <br />
+"A Restaurant/Food has exactly one location"
+* `Restaurant/Food SubClassOf hasCost exactly 1 FinancialResource` <br />
+"A Restaurant/Food has exactly one cost of FinancialResource"
+* `Restaurant/Food SubClassOf hasGeometry exactly 1 Geometry` <br />
+"A Restaurant/Food has exactly one geometry"
+* `Geometry SubClassOf hasSerialization some rdsf:Literal` <br />
+"A geometry has a serialization represented by some rdsf:Literal"
 
 ## Location
 ![Location](../schema-diagrams/LocationSchema1.png)
