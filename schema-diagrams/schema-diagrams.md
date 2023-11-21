@@ -9,8 +9,8 @@
 ## Financial Resource
 ![Financial-Resource](./FinancialResource.png)
 
-## Food
-![Food](./Food.png)
+## Restaurant
+![Restaurant](./Restaurant.png)
 
 ## Location
 ![Location](./LocationSchema1.png)
