@@ -7,9 +7,9 @@
 
 ### Axioms
 * `Accomodation SubClassOf hasID some xsd:integer` <br />
-"An accomodation has an ID represented by an integer value"
+"An accomodation has max one ID represented by an integer value"
 * `Accomodation SubClassOf hasName some xsd:string` <br />
-"An accomodation has a name represented by a string value"
+"An accomodation has max one name represented by a string value"
 * `Accomodation SubClassOf hasDetails some Details` <br />
 "An accomodation has some details"
 * `Accomodation SubClassOf hasReviews some Reviews` <br />
@@ -22,21 +22,23 @@
 "An accomodation has exactly one cost of FinancialResource"
 * `Accomodation SubClassOf hasGeometry exactly 1 Geometry` <br />
 "An accomodation has exactly one geometry"
+* `Geometry SubClassOf IsLinkedTo exactly 1 accomodation` <br />
+"Geometry is linked to exactly one accomodation"
 * `Geometry SubClassOf hasSerialization some rdsf:Literal` <br />
 "A geometry has a serialization represented by some rdsf:Literal"
 
-## Activities
+## Activity
 ![Activities](../schema-diagrams/Activity.png)
 
 ### Axioms
-* `Activities SubClassOf hasCost exactly 1 FinancialResource` <br />
-"Activities have a cost of exactly one FinancialResource"
-* `Activities SubClassOf hasName some xsd:string` <br />
-"Activities have a name that is represented by some xsd:string"
-* `Activities SubClassOf atLocation exactly 1 location` <br />
-"Activities have exactly one location"
-* `Activities SubClassOf hasType Outdoor/Indoor` <br />
-"Activities have a type that is either Indoor or Outdoor"
+* `Activity SubClassOf hasCost exactly 1 FinancialResource` <br />
+"Activity have a cost of exactly one FinancialResource"
+* `Activity SubClassOf hasName some xsd:string` <br />
+"Activity have a name that is represented by some xsd:string"
+* `Activity SubClassOf atLocation exactly 1 location` <br />
+"Activity have exactly one location"
+* `Activity SubClassOf hasType Outdoor/Indoor` <br />
+"Activity have a type that is either Indoor or Outdoor"
 * `Type SubClassOf isOutdoor exactly 1 Outdoor` <br />
 "If type is Outdoor then the type is represented by Outdoor"
 * `Type SubClassOf isIndoor exactly 1 Indoor` <br />
@@ -55,11 +57,11 @@ natural language description
 ![Restaurant](../schema-diagrams/Restaurant.png)
 
 ### Axioms
-* `Restaurant SubClassOf hasDetailsURL 0 or 1 xsd:anyURI` <br />
+* `Restaurant SubClassOf hasDetailURL 0 or 1 xsd:stringURI` <br />
 "A Restaurant has either has or doesn't have a URL pointing to its details"
 * `Restaurant SubClassOf hasName some xsd:string` <br />
 "A Restaurant has a name represented by a string value"
-* `Restaurant SubClassOf hasReviewsURL 0 or 1 xsd:anyURI` <br />
+* `Restaurant SubClassOf hasReviewURL 0 or 1 xsd:stringURI` <br />
 "A Restaurant has either has or doesn't have a URL pointing to its reviews"
 * `Restaurant SubClassOf hasFoodCategory some xsd:string` <br />
 "A Restaurant has some Food Category represented by a string value"
@@ -69,6 +71,8 @@ natural language description
 "A Restaurant has exactly one cost of FinancialResource"
 * `Restaurant SubClassOf hasGeometry exactly 1 Geometry` <br />
 "A Restaurant has exactly one geometry"
+* `Geometry SubClassOf IsLinkedTo exactly 1 restaurant` <br />
+"Geometry is linked to exactly one restaurant"
 * `Geometry SubClassOf hasSerialization some rdsf:Literal` <br />
 "A geometry has a serialization represented by some rdsf:Literal"
 
