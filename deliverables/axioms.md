@@ -20,10 +20,8 @@
 "An Accomodation has a exactly one category"
 * `Accomodation SubClassOf hasCost exactly 1 FinancialResource` <br />
 "An accomodation has exactly one cost of FinancialResource"
-* `Accomodation SubClassOf hasGeometry exactly 1 Geometry` <br />
-"An accomodation has exactly one geometry"
-* `Geometry SubClassOf IsLinkedTo exactly 1 accomodation` <br />
-"Geometry is linked to exactly one accomodation"
+* `Geometry SubClassOf inverse hasGeometry exactly 1 Accomodation` <br />
+"Every accomodation has exactly one geometry"
 * `Geometry SubClassOf hasSerialization some rdsf:Literal` <br />
 "A geometry has a serialization represented by some rdsf:Literal"
 
@@ -69,10 +67,8 @@ natural language description
 "A Restaurant has exactly one location"
 * `Restaurant SubClassOf hasCost exactly 1 FinancialResource` <br />
 "A Restaurant has exactly one cost of FinancialResource"
-* `Restaurant SubClassOf hasGeometry exactly 1 Geometry` <br />
-"A Restaurant has exactly one geometry"
-* `Geometry SubClassOf IsLinkedTo exactly 1 restaurant` <br />
-"Geometry is linked to exactly one restaurant"
+* `Geometry SubClassOf inverse hasGeometry exactly 1 Restaurant` <br />
+"Every Restaurant has exactly one geometry"
 * `Geometry SubClassOf hasSerialization some rdsf:Literal` <br />
 "A geometry has a serialization represented by some rdsf:Literal"
 
