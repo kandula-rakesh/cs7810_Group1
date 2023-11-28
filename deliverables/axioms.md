@@ -79,10 +79,26 @@
 ![Location](../schema-diagrams/LocationSchema1.png)
 
 ### Axioms
-* `axiom in manchester syntax` <br />
-natural language description
-* `axiom in manchester syntax` <br />
-natural language description
+* `Attraction SubClassOf hasID some xsd:integer` <br />
+"An attraction has max one ID represented by an integer value"
+* `Attraction SubClassOf hasName some xsd:string` <br />
+"An attraction has max one name represented by a string value"
+* `Attraction SubClassOf hasDetail some Details` <br />
+"An attraction has some details"
+* `Attraction SubClassOf hasReviews some Reviews` <br />
+"An attraction has some reviews"
+* `Attraction SubClassOf isLocatedAt exactly 1 location` <br />
+"An attraction has exactly one location"
+* `Attraction SubClassOf isCategory exactly 1 Category` <br />
+"An attraction has a exactly one category"
+* `Attraction SubClassOf hasCost exactly 1 FinancialResource` <br />
+"An attraction has exactly one cost of FinancialResource"
+* `Attraction SubClassOf hasActivity some Activity` <br />
+"An attraction has some activities"
+* `Geometry SubClassOf inverse hasGeometry exactly 1 Accomodation` <br />
+"Every accomodation has exactly one geometry"
+* `Geometry SubClassOf hasSerialization some rdsf:Literal` <br />
+"A geometry has a serialization represented by some rdsf:Literal"
 
 ## Transport Schema Diagram
 ![Transport](../schema-diagrams/Transport.jpg)
