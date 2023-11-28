@@ -46,10 +46,13 @@
 ![Financial-Resource](../schema-diagrams/FinancialResource.png)
 
 ### Axioms
-* `axiom in manchester syntax` <br />
-natural language description
-* `axiom in manchester syntax` <br />
-natural language description
+* `FinancialResource SubClassOf Currency some qudt:USD` <br />
+"FinancialResurce has a currency represented by USD"
+* `Food SubClassOf hasCost some FinancialResource` <br />
+* `Activity SubClassOf hasCost some FinancialResource` <br />
+* `Housing SubClassOf hasCost some FinancialResource` <br />
+* `Transportation SubClassOf hasCost some FinancialResource` <br />
+"Food, Activity, Housing, and Transportation all have a cost represented by FinancialResource."
 
 ## Restaurant
 ![Restaurant](../schema-diagrams/Restaurant.png)
