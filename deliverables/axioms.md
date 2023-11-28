@@ -26,7 +26,7 @@
 "A geometry has a serialization represented by some rdsf:Literal"
 
 ## Activity
-![Activities](../schema-diagrams/Activity.png)
+![Activities](../schema-diagrams/Activity .png)
 
 ### Axioms
 * `Activity SubClassOf hasCost exactly 1 FinancialResource` <br />
