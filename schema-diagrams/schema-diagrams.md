@@ -3,8 +3,8 @@
 ## Accomodation
 ![Accomodation](./Accomodation.jpg)
 
-## Activities
-![Activities](./Activity.png)
+## Activity
+![Activity](./Activity.png)
 
 ## Financial Resource
 ![Financial-Resource](./FinancialResource.png)
@@ -13,7 +13,7 @@
 ![Restaurant](./Restaurant.png)
 
 ## Location
-![Location](./LocationSchema1.png)
+![Location](./LocationSchema.png)
 
 ## Transport Schema Diagram
 ![Transport](./Transport.jpg)
