@@ -95,8 +95,8 @@
 "An attraction has exactly one cost of FinancialResource"
 * `Attraction SubClassOf hasActivity some Activity` <br />
 "An attraction has some activities"
-* `Geometry SubClassOf inverse hasGeometry exactly 1 Accomodation` <br />
-"Every accomodation has exactly one geometry"
+* `Geometry SubClassOf inverse hasGeometry exactly 1 Attraction` <br />
+"Every attraction has exactly one geometry"
 * `Geometry SubClassOf hasSerialization some rdsf:Literal` <br />
 "A geometry has a serialization represented by some rdsf:Literal"
 
