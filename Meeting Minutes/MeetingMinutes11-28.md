@@ -38,4 +38,5 @@
 * Due: 11/16
 
 ## Contributors
-* Calvin Greenewald 
+* Calvin Greenewald
+* Skyler Gentner
