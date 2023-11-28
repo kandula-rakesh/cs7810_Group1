@@ -76,7 +76,7 @@
 "A geometry has a serialization represented by some rdsf:Literal"
 
 ## Location
-![Location](../schema-diagrams/LocationSchema1.png)
+![Location](../schema-diagrams/LocationSchema.png)
 
 ### Axioms
 * `Attraction SubClassOf hasID some xsd:integer` <br />
