@@ -49,10 +49,13 @@
 * `FinancialResource SubClassOf Currency some qudt:USD` <br />
 "FinancialResurce has a currency represented by USD"
 * `Food SubClassOf hasCost some FinancialResource` <br />
+"Food has a cost represented by FinancialResource"
 * `Activity SubClassOf hasCost some FinancialResource` <br />
+"Activity has a cost represented by FinancialResource."
 * `Housing SubClassOf hasCost some FinancialResource` <br />
+"Housing has a cost represented by FinancialResource."
 * `Transportation SubClassOf hasCost some FinancialResource` <br />
-"Food, Activity, Housing, and Transportation all have a cost represented by FinancialResource."
+"Transportation has a cost represented by FinancialResource."
 
 ## Restaurant
 ![Restaurant](../schema-diagrams/Restaurant.png)
