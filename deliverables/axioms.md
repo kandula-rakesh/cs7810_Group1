@@ -88,6 +88,8 @@
 "An attraction has exactly one cost of FinancialResource"
 * `Attraction SubClassOf hasActivity some Activity` <br />
 "An attraction has some activity"
+* `Attraction SubClassOf isA is a SpatialObject` <br />
+"An Attraction is of type SpatialObject"
 
 ## Transport
 ![Transport](../schema-diagrams/Transport.jpg)
