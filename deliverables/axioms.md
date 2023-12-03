@@ -10,8 +10,6 @@
 "An accomodation has max one ID represented by an integer value"
 * `Accomodation SubClassOf hasName some xsd:string` <br />
 "An accomodation has max one name represented by a string value"
-* `Accomodation SubClassOf hasDetail some Detail` <br />
-"An accomodation has some detail"
 * `Accomodation SubClassOf hasReview some Review` <br />
 "An accomodation has some review"
 * `Accomodation SubClassOf isLocatedAt exactly 1 location` <br />
@@ -22,14 +20,6 @@
 "An accomodation has exactly one cost of FinancialResource"
 * `Accomodation SubClassOf isA is a SpatialObject` <br />
 "An Accomodation is of type SpatialObject"
-* `Detail SubClassOf hasURL some xsd:string` <br />
-"Detail has min 0 URL represented by a string URI"
-* `Detail SubClassOf hasSource some Source` <br />
-"Detail has min 0 Source some Source"
-* `Review SubClassOf hasURL some xsd:string` <br />
-"Review has min 0 URL represented by a string URI"
-* `Review SubClassOf hasSource some Source` <br />
-"Review has min 0 Source some Source"
 
 ## Activity
 ![Activities](../schema-diagrams/Activity.png)
@@ -88,8 +78,6 @@
 "An attraction has max one ID represented by an integer value"
 * `Attraction SubClassOf hasName some xsd:string` <br />
 "An attraction has max one name represented by a string value"
-* `Attraction SubClassOf hasDetail some Detail` <br />
-"An attraction has some detail"
 * `Attraction SubClassOf hasReview some Review` <br />
 "An attraction has some review"
 * `Attraction SubClassOf isLocatedAt exactly 1 location` <br />
@@ -100,16 +88,8 @@
 "An attraction has exactly one cost of FinancialResource"
 * `Attraction SubClassOf hasActivity some Activity` <br />
 "An attraction has some activity"
-* `Detail SubClassOf hasURL some xsd:string` <br />
-"Detail has min 0 URL represented by a string URI"
-* `Detail SubClassOf hasSource some Source` <br />
-"Detail has min 0 Source some Source"
-* `Review SubClassOf hasURL some xsd:string` <br />
-"Review has min 0 URL represented by a string URI"
-* `Review SubClassOf hasSource some Source` <br />
-"Review has min 0 Source some Source"
 
-## Transport Schema Diagram
+## Transport
 ![Transport](../schema-diagrams/Transport.jpg)
 
 ### Axioms
@@ -117,19 +97,24 @@
 "A transport has an ID represented by an integer value"
 * `Transport SubClassOf hasName some xsd:string` <br />
 "A transport has a name represented by a string value"
-* `Transport SubClassOf hasDetail some Detail` <br />
-"A transport has some detail"
 * `Transport SubClassOf hasReview some Review` <br />
 "A transport has some review"
 * `Transport SubClassOf isCategory exactly 1 Category` <br />
 "A Transport has a exactly one category"
 * `Transport SubClassOf hasCost exactly 1 FinancialResource` <br />
 "A transport has exactly one cost of FinancialResource"
-* `Detail SubClassOf hasURL some xsd:string` <br />
-"Detail has min 0 URL represented by a string URI"
-* `Detail SubClassOf hasSource some Source` <br />
-"Detail has min 0 Source some Source"
+
+## Review
+![Review](../schema-diagrams/Review.jpg)
+
+### Axioms
 * `Review SubClassOf hasURL some xsd:string` <br />
 "Review has min 0 URL represented by a string URI"
 * `Review SubClassOf hasSource some Source` <br />
 "Review has min 0 Source some Source"
+* `Source SubClassOf hasName some xsd:string` <br />
+"Source has a Name represented by a string value"
+* `Source SubClassOf hasText some xsd:string` <br />
+"Source has a Text represented by a string value"
+* `Source SubClassOf hasRating some xsd:integer` <br />
+"Source has a Rating represented by an integer value"
