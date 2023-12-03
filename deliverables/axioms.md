@@ -10,20 +10,26 @@
 "An accomodation has max one ID represented by an integer value"
 * `Accomodation SubClassOf hasName some xsd:string` <br />
 "An accomodation has max one name represented by a string value"
-* `Accomodation SubClassOf hasDetails some Details` <br />
-"An accomodation has some details"
-* `Accomodation SubClassOf hasReviews some Reviews` <br />
-"An accomodation has some reviews"
+* `Accomodation SubClassOf hasDetail some Detail` <br />
+"An accomodation has some detail"
+* `Accomodation SubClassOf hasReview some Review` <br />
+"An accomodation has some review"
 * `Accomodation SubClassOf isLocatedAt exactly 1 location` <br />
 "An accomodation has exactly one location"
 * `Accomodation SubClassOf isCategory exactly 1 Category` <br />
 "An Accomodation has a exactly one category"
 * `Accomodation SubClassOf hasCost exactly 1 FinancialResource` <br />
 "An accomodation has exactly one cost of FinancialResource"
-* `Geometry SubClassOf inverse hasGeometry exactly 1 Accomodation` <br />
-"Every accomodation has exactly one geometry"
-* `Geometry SubClassOf hasSerialization some rdsf:Literal` <br />
-"A geometry has a serialization represented by some rdsf:Literal"
+* `Accomodation SubClassOf isA is a SpatialObject` <br />
+"An Accomodation is of type SpatialObject"
+* `Detail SubClassOf hasURL some xsd:string` <br />
+"Detail has min 0 URL represented by a string URI"
+* `Detail SubClassOf hasSource some Source` <br />
+"Detail has min 0 Source some Source"
+* `Review SubClassOf hasURL some xsd:string` <br />
+"Review has min 0 URL represented by a string URI"
+* `Review SubClassOf hasSource some Source` <br />
+"Review has min 0 Source some Source"
 
 ## Activity
 ![Activities](../schema-diagrams/Activity.png)
@@ -32,7 +38,7 @@
 * `Activity SubClassOf hasCost exactly 1 FinancialResource` <br />
 "Activity have a cost of exactly one FinancialResource"
 * `Activity SubClassOf hasName some xsd:string` <br />
-"Activity have a name that is represented by some xsd:string"
+"Activity have a name that is represented by some string"
 * `Activity SubClassOf atLocation exactly 1 location` <br />
 "Activity have exactly one location"
 * `Activity SubClassOf hasType Outdoor/Indoor` <br />
@@ -73,10 +79,6 @@
 "A Restaurant has exactly one location"
 * `Restaurant SubClassOf hasCost exactly 1 FinancialResource` <br />
 "A Restaurant has exactly one cost of FinancialResource"
-* `Geometry SubClassOf inverse hasGeometry exactly 1 Restaurant` <br />
-"Every Restaurant has exactly one geometry"
-* `Geometry SubClassOf hasSerialization some rdsf:Literal` <br />
-"A geometry has a serialization represented by some rdsf:Literal"
 
 ## Location
 ![Location](../schema-diagrams/LocationSchema.png)
@@ -86,10 +88,10 @@
 "An attraction has max one ID represented by an integer value"
 * `Attraction SubClassOf hasName some xsd:string` <br />
 "An attraction has max one name represented by a string value"
-* `Attraction SubClassOf hasDetail some Details` <br />
-"An attraction has some details"
-* `Attraction SubClassOf hasReviews some Reviews` <br />
-"An attraction has some reviews"
+* `Attraction SubClassOf hasDetail some Detail` <br />
+"An attraction has some detail"
+* `Attraction SubClassOf hasReview some Review` <br />
+"An attraction has some review"
 * `Attraction SubClassOf isLocatedAt exactly 1 location` <br />
 "An attraction has exactly one location"
 * `Attraction SubClassOf isCategory exactly 1 Category` <br />
@@ -97,11 +99,15 @@
 * `Attraction SubClassOf hasCost exactly 1 FinancialResource` <br />
 "An attraction has exactly one cost of FinancialResource"
 * `Attraction SubClassOf hasActivity some Activity` <br />
-"An attraction has some activities"
-* `Geometry SubClassOf inverse hasGeometry exactly 1 Attraction` <br />
-"Every attraction has exactly one geometry"
-* `Geometry SubClassOf hasSerialization some rdsf:Literal` <br />
-"A geometry has a serialization represented by some rdsf:Literal"
+"An attraction has some activity"
+* `Detail SubClassOf hasURL some xsd:string` <br />
+"Detail has min 0 URL represented by a string URI"
+* `Detail SubClassOf hasSource some Source` <br />
+"Detail has min 0 Source some Source"
+* `Review SubClassOf hasURL some xsd:string` <br />
+"Review has min 0 URL represented by a string URI"
+* `Review SubClassOf hasSource some Source` <br />
+"Review has min 0 Source some Source"
 
 ## Transport Schema Diagram
 ![Transport](../schema-diagrams/Transport.jpg)
@@ -111,11 +117,19 @@
 "A transport has an ID represented by an integer value"
 * `Transport SubClassOf hasName some xsd:string` <br />
 "A transport has a name represented by a string value"
-* `Transport SubClassOf hasDetails some Details` <br />
-"A transport has some details"
-* `Transport SubClassOf hasReviews some Reviews` <br />
-"A transport has some reviews"
+* `Transport SubClassOf hasDetail some Detail` <br />
+"A transport has some detail"
+* `Transport SubClassOf hasReview some Review` <br />
+"A transport has some review"
 * `Transport SubClassOf isCategory exactly 1 Category` <br />
 "A Transport has a exactly one category"
 * `Transport SubClassOf hasCost exactly 1 FinancialResource` <br />
 "A transport has exactly one cost of FinancialResource"
+* `Detail SubClassOf hasURL some xsd:string` <br />
+"Detail has min 0 URL represented by a string URI"
+* `Detail SubClassOf hasSource some Source` <br />
+"Detail has min 0 Source some Source"
+* `Review SubClassOf hasURL some xsd:string` <br />
+"Review has min 0 URL represented by a string URI"
+* `Review SubClassOf hasSource some Source` <br />
+"Review has min 0 Source some Source"
