@@ -120,3 +120,12 @@
 "Source has a Text represented by a string value"
 * `Source SubClassOf hasRating some xsd:integer` <br />
 "Source has a Rating represented by an integer value"
+
+## SpatialObject
+![SpatialObject](../schema-diagrams/GeometrySpatialObject.png)
+
+### Axioms
+* `SpatialObject type Geometry` <br />
+"SpatialObject is of type Geometry"
+* `Geometry SubClassOf asWKT some geo:wktLiteral` <br />
+"Geometry is represented as WKT by some wktLiteral value" 
