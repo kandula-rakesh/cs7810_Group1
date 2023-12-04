@@ -57,18 +57,18 @@
 ![Restaurant](../schema-diagrams/Restaurant.png)
 
 ### Axioms
-* `Restaurant SubClassOf hasDetailURL 0 or 1 xsd:stringURI` <br />
-"A Restaurant has either has or doesn't have a URL pointing to its details"
 * `Restaurant SubClassOf hasName some xsd:string` <br />
 "A Restaurant has a name represented by a string value"
-* `Restaurant SubClassOf hasReviewURL 0 or 1 xsd:stringURI` <br />
-"A Restaurant has either has or doesn't have a URL pointing to its reviews"
-* `Restaurant SubClassOf hasFoodCategory some xsd:string` <br />
-"A Restaurant has some Food Category represented by a string value"
+* `Restaurant SubClassOf hasReview some Review` <br />
+"A Restaurant has some review"
+* `Restaurant SubClassOf hasFoodCategory 0 or 1 xsd:string` <br />
+"A Restaurant may or may not have a Food Category represented by a string value"
 * `Restaurant SubClassOf isLocatedAt exactly 1 location` <br />
 "A Restaurant has exactly one location"
 * `Restaurant SubClassOf hasCost exactly 1 FinancialResource` <br />
 "A Restaurant has exactly one cost of FinancialResource"
+* `Restaurant SubClassOf isA is a SpatialObject` <br />
+"A Restaurant is of type SpatialObject"
 
 ## Location
 ![Location](../schema-diagrams/LocationSchema.png)
