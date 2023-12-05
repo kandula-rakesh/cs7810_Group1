@@ -61,9 +61,9 @@
 "A Restaurant has a name represented by a string value"
 * `Restaurant SubClassOf hasReview some Review` <br />
 "A Restaurant has some review"
-* `Restaurant SubClassOf hasFoodCategory 0 or 1 xsd:string` <br />
-"A Restaurant may or may not have a Food Category represented by a string value"
-* `Restaurant SubClassOf isLocatedAt exactly 1 location` <br />
+* `Restaurant SubClassOf hasCategory 0 or 1 xsd:string` <br />
+"A Restaurant may or may not have a Category represented by a string value"
+* `Restaurant SubClassOf hasLocation exactly 1 location` <br />
 "A Restaurant has exactly one location"
 * `Restaurant SubClassOf hasCost exactly 1 FinancialResource` <br />
 "A Restaurant has exactly one cost of FinancialResource"
