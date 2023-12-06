@@ -153,12 +153,11 @@ with open('..\\dataset\\restaurant_combined.csv', 'r', encoding="utf-8") as csvf
         #Adding Geometry point as WKT
         wkt_literal = f"POINT({geometry_lon} {geometry_lat})"
         point_uri = pfs["kl-res"][f"{'geometry.point'}.{id}"]
-        
         g.add((restaurant_uri,  pfs["geo"]["hasGeometry"],point_uri))
         #g.add((point_uri,  pfs["rdfs"]["subClassOf"],SpatialObject))
-        g.add((point_uri, pfs["geo"]["hasGeometry"], Geometry))
+        g.add((point_uri, a, pfs["geo"]["hasGeometry"]))
         #g.add((point_uri, a, Geometry))
-        g.add((Geometry, pfs["geo"]["asWKT"], Literal(wkt_literal, datatype=pfs["geo"]["wktLiteral"]) ))
+        g.add((point_uri, pfs["geo"]["asWKT"], Literal(wkt_literal, datatype=pfs["geo"]["wktLiteral"]) ))
 
 
 with open('..\\dataset\\accomodation_filtered.csv', 'r', encoding="utf-8") as csvfile:
@@ -226,9 +225,9 @@ with open('..\\dataset\\accomodation_filtered.csv', 'r', encoding="utf-8") as cs
         point_uri = pfs["kl-res"][f"{'geometry.point'}.{id}"]
         g.add((accomodation_uri,  pfs["geo"]["hasGeometry"],point_uri))
         #g.add((point_uri,  pfs["rdfs"]["subClassOf"],SpatialObject))
-        g.add((point_uri, pfs["geo"]["hasGeometry"], Geometry))
+        g.add((point_uri, a, pfs["geo"]["hasGeometry"]))
         #g.add((point_uri, a, Geometry))
-        g.add((Geometry, pfs["geo"]["asWKT"], Literal(wkt_literal, datatype=pfs["geo"]["wktLiteral"]) ))
+        g.add((point_uri, pfs["geo"]["asWKT"], Literal(wkt_literal, datatype=pfs["geo"]["wktLiteral"]) ))
 
 
 with open('..\\dataset\\attractions_combined.csv', 'r', encoding="utf-8") as csvfile:
@@ -296,9 +295,9 @@ with open('..\\dataset\\attractions_combined.csv', 'r', encoding="utf-8") as csv
         point_uri = pfs["kl-res"][f"{'geometry.point'}.{id}"]
         g.add((attraction_uri,  pfs["geo"]["hasGeometry"],point_uri))
         #g.add((point_uri,  pfs["rdfs"]["subClassOf"],SpatialObject))
-        g.add((point_uri, pfs["geo"]["hasGeometry"], Geometry))
+        g.add((point_uri, a, pfs["geo"]["hasGeometry"]))
         #g.add((point_uri, a, Geometry))
-        g.add((Geometry, pfs["geo"]["asWKT"], Literal(wkt_literal, datatype=pfs["geo"]["wktLiteral"]) ))
+        g.add((point_uri, pfs["geo"]["asWKT"], Literal(wkt_literal, datatype=pfs["geo"]["wktLiteral"]) ))
 
 with open('..\\dataset\\transport_filtered.csv', 'r', encoding="utf-8") as csvfile:
     reader = csv.DictReader(csvfile)
@@ -365,9 +364,9 @@ with open('..\\dataset\\transport_filtered.csv', 'r', encoding="utf-8") as csvfi
         point_uri = pfs["kl-res"][f"{'geometry.point'}.{id}"]
         g.add((transport_uri,  pfs["geo"]["hasGeometry"],point_uri))
         #g.add((point_uri,  pfs["rdfs"]["subClassOf"],SpatialObject))
-        g.add((point_uri, pfs["geo"]["hasGeometry"], Geometry))
+        g.add((point_uri, a, pfs["geo"]["hasGeometry"]))
         #g.add((point_uri, a, Geometry))
-        g.add((Geometry, pfs["geo"]["asWKT"], Literal(wkt_literal, datatype=pfs["geo"]["wktLiteral"]) ))
+        g.add((point_uri, pfs["geo"]["asWKT"], Literal(wkt_literal, datatype=pfs["geo"]["wktLiteral"]) ))
 
 # Define the output folder and file name
 output_folder = "..\\output"
