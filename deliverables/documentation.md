@@ -35,7 +35,7 @@ A knowledge graph on travel recommendations would positively impact the tourism 
 
 ### Integrated Datasets
 Source: [Tourist Information](http://tour-pedia.org/about/datasets.html)
-- Description
+- A complete dataset containing a large amout of data describing the actions that we are covering, locations, reviews, and prices. 
 
 Source: [AirBnB](https://data.world/datasets/berlin)
 - Overview of AirBnB data from Berlin.
@@ -45,13 +45,104 @@ Source: [Restaurant Data] (https://www.kaggle.com/datasets/damienbeneschi/krakow
 
 
 ## Modules
-<!-- There should be one module section per module (essentially per key-notion) -->
-### Module X
-**Source Pattern:** name of adapted source pattern
-**Source Data:** name(s) of dataset(s) which populate this module
+### Transport
+**Source Pattern:** Part-whole, Hierarchial-cell-features <br />
+**Source Data:** Tour Dataset
 
 #### Description
-Description Text (adapted from the rationale in `key-notions.md`).
+The mode of transportation can affect the enjoyment the traveller experiences during their trip. They may not want to ride in public transportation and would rather drive themselves to anywhere they want to go at their destination. The traveller could also want their primary transportation to come in the form of walking so it would be better to know that so they can take a trip in a walkable city instead of a place where everything is far away from each other. Recognizing these transportation preferences helps travelers select modes that align with their comfort and travel style, ultimately enhancing their overall travel experience.
+
+![schema-diagram](./schema-diagram.png)
+
+#### Axioms
+* `Transport SubClassOf hasID some xsd:integer` <br />
+"A transport has an ID represented by an integer value"
+* `Transport SubClassOf hasName some xsd:string` <br />
+"A transport has a name represented by a string value"
+* `Transport SubClassOf hasReview some Review` <br />
+"A transport has some review"
+* `Transport SubClassOf isCategory exactly 1 Category` <br />
+"A Transport has a exactly one category"
+* `Transport SubClassOf hasCost exactly 1 FinancialResource` <br />
+"A transport has exactly one cost of FinancialResource"
+
+### Financial Resource
+**Source Pattern:** QuantityPattern <br />
+**Source Data:** Tour Dataset
+
+#### Description
+Depending on how high or low the user's budget is they will be provided with more or fewer options to travel to. Providing options that are available for a particular range of budget makes it possible to plan for a trip despite the constraints. Recognizing the budgetary limitations of travelers helps in tailoring recommendations that not only fit their financial capabilities but also ensure that their travel plans are realistic and enjoyable.
+
+![schema-diagram](./schema-diagram.png)
+
+#### Axioms
+* `FinancialResource SubClassOf Currency some qudt:USD` <br />
+"FinancialResurce has a currency represented by USD"
+* `Food SubClassOf hasCost some FinancialResource` <br />
+"Food has a cost represented by FinancialResource"
+* `Activity SubClassOf hasCost some FinancialResource` <br />
+"Activity has a cost represented by FinancialResource."
+* `Housing SubClassOf hasCost some FinancialResource` <br />
+"Housing has a cost represented by FinancialResource."
+* `Transportation SubClassOf hasCost some FinancialResource` <br />
+"Transportation has a cost represented by FinancialResource."
+
+### Activity
+**Source Pattern:** SpatioTemporalExtent, Temporal extent <br />
+**Source Data:** Tour Dataset
+
+#### Description
+Some users would like to plan their trip around certain activies that they can do while travelling. This could also help other users know what sorts of activities are available so that if needed they can make reservations ahead of time so they do not have to miss out on something they might want to do. Recognizing the significance of activities in travel planning allows users to align their travel experiences with their interests and also ensures that they can make necessary arrangements to fully enjoy the activities they desire during their trip. Given the users activity interest they could choose from different locations that offer some or all of the activities. This approach empowers travelers to select destinations that are tailored to their preferred activities, enhancing their overall travel experience by ensuring that their chosen location aligns with their activity interests and enabling them to make the most of their trip.
+
+![schema-diagram](./schema-diagram.png)
+
+#### Axioms
+* `Activity SubClassOf hasCost exactly 1 FinancialResource` <br />
+"Activity have a cost of exactly one FinancialResource"
+* `Activity SubClassOf hasName some xsd:string` <br />
+"Activity have a name that is represented by some string"
+* `Activity SubClassOf atLocation exactly 1 location` <br />
+"Activity have exactly one location"
+* `Activity SubClassOf hasType Outdoor/Indoor` <br />
+"Activity have a type that is either Indoor or Outdoor"
+* `Type SubClassOf isOutdoor exactly 1 Outdoor` <br />
+"If type is Outdoor then the type is represented by Outdoor"
+* `Type SubClassOf isIndoor exactly 1 Indoor` <br />
+"If type is Indoor then the type is represented by Indoor"
+
+### Location
+**Source Pattern:** SpatialObject or SpatialExtent <br />
+**Source Data:** Tour Dataset
+
+#### Description
+Tourist spots would be things such as historical monuments, artistic statues, or a particular sight from a mountain that people like to see that the traveller might also want to see while on vacation. This could be important to someone who wants to plan a trip to see both the Colosseum and the statue of David on the same trip to Italy. Understanding the availability and significance of tourist spots aids travelers in creating well-rounded itineraries that encompass cultural, historical, and scenic attractions, ensuring that they can maximize their exploration of the chosen destination. And knowing the specifications of a travel location can help the traveller go to a place that they would enjoy. The traveller has in mind general information on a location that they want to go to. It would be important that someone who wants to go to the beach got there instead of ending up on the ski slopes of a mountain.These specifications can include details about the geographical features, climate, topography, and primary attractions of the location, ensuring that travelers can choose destinations that align with their preferences and expectations.
+
+![schema-diagram](./schema-diagram.png)
+
+#### Axioms
+* `Attraction SubClassOf hasID some xsd:integer` <br />
+"An attraction has max one ID represented by an integer value"
+* `Attraction SubClassOf hasName some xsd:string` <br />
+"An attraction has max one name represented by a string value"
+* `Attraction SubClassOf hasReview some Review` <br />
+"An attraction has some review"
+* `Attraction SubClassOf isLocatedAt exactly 1 location` <br />
+"An attraction has exactly one location"
+* `Attraction SubClassOf isCategory exactly 1 Category` <br />
+"An attraction has a exactly one category"
+* `Attraction SubClassOf hasCost exactly 1 FinancialResource` <br />
+"An attraction has exactly one cost of FinancialResource"
+* `Attraction SubClassOf hasActivity some Activity` <br />
+"An attraction has some activity"
+* `Attraction SubClassOf isA is a SpatialObject` <br />
+"An Attraction is of type SpatialObject"
+
+### Accomodation
+**Source Pattern:** Part-whole, Quantity, SpatioTemporalExtent <br />
+**Source Data:** Berlin Airbnb Dataset, Tour Dataset
+
+#### Description
+Housing is important while on a vacation. This is where your belongings will be kept and where you will be sleeping. If your housing is in a bad part of town you may be worrying your entire trip whether or not something will get stolen. Also, if you can not sleep well in whatever housing you choose it will impact your experience as you most likely will not feel as good as you could if you got a full rest each night. Recognizing the significance of suitable accommodations in travel planning ensures that travelers have a secure and comfortable base during their journey, reducing concerns about safety and the quality of their rest, ultimately enhancing the overall travel experience.
 
 ![schema-diagram](./schema-diagram.png)
 
@@ -70,28 +161,17 @@ Description Text (adapted from the rationale in `key-notions.md`).
 "An accomodation has exactly one cost of FinancialResource"
 * `Accomodation SubClassOf isA is a SpatialObject`<br />
 "An Accomodation is of type SpatialObject"
-* `Activity SubClassOf hasCost exactly 1 FinancialResource` <br />
-"Activity have a cost of exactly one FinancialResource"
-* `Activity SubClassOf hasName some xsd:string` <br />
-"Activity have a name that is represented by some string"
-* `Activity SubClassOf atLocation exactly 1 location` <br />
-"Activity have exactly one location"
-* `Activity SubClassOf hasType Outdoor/Indoor` <br />
-"Activity have a type that is either Indoor or Outdoor"
-* `Type SubClassOf isOutdoor exactly 1 Outdoor` <br />
-"If type is Outdoor then the type is represented by Outdoor"
-* `Type SubClassOf isIndoor exactly 1 Indoor` <br />
-"If type is Indoor then the type is represented by Indoor"
-* `FinancialResource SubClassOf Currency some qudt:USD` <br />
-"FinancialResurce has a currency represented by USD"
-* `Food SubClassOf hasCost some FinancialResource` <br />
-"Food has a cost represented by FinancialResource"
-* `Activity SubClassOf hasCost some FinancialResource` <br />
-"Activity has a cost represented by FinancialResource."
-* `Housing SubClassOf hasCost some FinancialResource` <br />
-"Housing has a cost represented by FinancialResource."
-* `Transportation SubClassOf hasCost some FinancialResource` <br />
-"Transportation has a cost represented by FinancialResource."
+
+### Restaurant
+**Source Pattern:** Provenance, Temporal extent <br />
+**Source Data:** Restaurant info, Tour Dataset
+
+#### Description
+Different destinations offer diverse culinary experiences. Understanding the food options available in a location allows travelers to explore and savor the local cuisine, which for food lovers is often a highlight of the trip. For travelers who appreciate culinary adventures, discovering the local cuisine is a significant aspect of their journey. Different destinations provide unique and diverse culinary traditions. Understanding the food options available in a location ensures that food enthusiasts can indulge in the flavors and culinary delights of the region, enhancing their overall travel experience by savoring the local gastronomy.
+
+![schema-diagram](./schema-diagram.png)
+
+#### Axioms
 * `Restaurant SubClassOf hasName some xsd:string` <br />
 "A Restaurant has a name represented by a string value"
 * `Restaurant SubClassOf hasReview some Review` <br />
@@ -104,46 +184,10 @@ Description Text (adapted from the rationale in `key-notions.md`).
 "A Restaurant has exactly one cost of FinancialResource"
 * `Restaurant SubClassOf isA is a SpatialObject` <br />
 "A Restaurant is of type SpatialObject"
-* `Attraction SubClassOf hasID some xsd:integer` <br />
-"An attraction has max one ID represented by an integer value"
-* `Attraction SubClassOf hasName some xsd:string` <br />
-"An attraction has max one name represented by a string value"
-* `Attraction SubClassOf hasReview some Review` <br />
-"An attraction has some review"
-* `Attraction SubClassOf isLocatedAt exactly 1 location` <br />
-"An attraction has exactly one location"
-* `Attraction SubClassOf isCategory exactly 1 Category` <br />
-"An attraction has a exactly one category"
-* `Attraction SubClassOf hasCost exactly 1 FinancialResource` <br />
-"An attraction has exactly one cost of FinancialResource"
-* `Attraction SubClassOf hasActivity some Activity` <br />
-"An attraction has some activity"
-* `Attraction SubClassOf isA is a SpatialObject` <br />
-"An Attraction is of type SpatialObject"
-* `Transport SubClassOf hasID some xsd:integer` <br />
-"A transport has an ID represented by an integer value"
-* `Transport SubClassOf hasName some xsd:string` <br />
-"A transport has a name represented by a string value"
-* `Transport SubClassOf hasReview some Review` <br />
-"A transport has some review"
-* `Transport SubClassOf isCategory exactly 1 Category` <br />
-"A Transport has a exactly one category"
-* `Transport SubClassOf hasCost exactly 1 FinancialResource` <br />
-"A transport has exactly one cost of FinancialResource"
-* `Review SubClassOf hasURL some xsd:string` <br />
-"Review has min 0 URL represented by a string URI"
-* `Review SubClassOf hasSource some Source` <br />
-"Review has min 0 Source some Source"
-* `Source SubClassOf hasName some xsd:string` <br />
-"Source has a Name represented by a string value"
-* `Source SubClassOf hasText some xsd:string` <br />
-"Source has a Text represented by a string value"
-* `Source SubClassOf hasRating some xsd:integer` <br />
-"Source has a Rating represented by an integer value"
-* `SpatialObject type Geometry` <br />
-"SpatialObject is of type Geometry"
-* `Geometry SubClassOf asWKT some geo:wktLiteral` <br />
-"Geometry is represented as WKT by some wktLiteral value" 
+
+
+
+
 
 
 #### Remarks
