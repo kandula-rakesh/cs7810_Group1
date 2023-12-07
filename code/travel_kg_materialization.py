@@ -30,10 +30,12 @@ Category = pfs["kl-ont"]["Category"]
 Location = pfs["kl-ont"]["Location"]
 Accomodation = pfs['kl-ont']['Accomodation']
 Attraction =  pfs['kl-ont']['Attraction']
+Transport = pfs['kl-ont']['Transport']
 Review = pfs["kl-ont"]["Review"]
 Source = pfs["kl-ont"]["Source"]
 SpatialObject = pfs["kl-ont"]["SpatialObject"]
 Geometry = pfs['geo']['Geometry']
+
                        
 #defining object properties
 hasName = pfs["kl-ont"]["hasName"]
@@ -45,6 +47,7 @@ hasID = pfs["kl-ont"]["hasID"]
 hasLocation = pfs["kl-ont"]["hasLocation"]
 hasRestaurant = pfs["kl-ont"]["hasRestaurant"]
 hasAccomodation = pfs["kl-ont"]["hasAccomodation"]
+hasTransport = pfs["kl-ont"]["hasTransport"]
 hasAttraction = pfs["kl-ont"]["hasAttraction"]
 hasCost = pfs["kl-ont"]["hasCost"]
 hasURL = pfs["kl-ont"]["hasURL"]
@@ -79,7 +82,7 @@ def add_reviews_to_kg(id,dataframe,entity_uri,review_uri):
             rating = row['rating']
             text = row['text']
             source_uri = pfs["kl-res"][source]
-            g.add((source_uri, a, Source))
+            #g.add((source_uri, a, Source))
             g.add((review_uri, hasSource, source_uri))
             g.add((source_uri, hasRating, Literal(rating,datatype=XSD.integer)))
             g.add((source_uri, hasName, Literal(source,datatype=XSD.string)))
@@ -142,12 +145,12 @@ with open('..\\dataset\\restaurant_combined.csv', 'r', encoding="utf-8") as csvf
                 rating = row['rating']
                 text = row['text']
                 source_uri = pfs["kl-res"][source]
-                g.add((source_uri, a, Source))
+                #g.add((source_uri, a, Source))
                 g.add((review_uri, hasSource, source_uri))
-                g.add((source_uri, hasRating, Literal(rating,datatype=XSD.integer)))
-                g.add((source_uri, hasName, Literal(source,datatype=XSD.string)))
-                g.add((source_uri, hasText, Literal(text,datatype=XSD.string)))
-                g.add((source_uri, hasID, restaurant_uri))
+                g.add((review_uri, hasRating, Literal(rating,datatype=XSD.integer)))
+                g.add((review_uri, hasName, Literal(source,datatype=XSD.string)))
+                g.add((review_uri, hasText, Literal(text,datatype=XSD.string)))
+                g.add((review_uri, hasID, restaurant_uri))
                 # Process or perform operations on the current row
                 #print(f"id: {id_value}, source: {source}, rating: {rating}, text: {text}")
         #Adding Geometry point as WKT
@@ -199,9 +202,9 @@ with open('..\\dataset\\accomodation_filtered.csv', 'r', encoding="utf-8") as cs
         g.add((review_uri, hasURL, Literal(review_url, datatype=XSD.string)))
         #filtering the reviews of the restaurant using its ID and adding it into graph
         id = int(id)
-        if id in restaurant_reviews_df['id'].values:
+        if id in accomodation_reviews_df['id'].values:
             #print("entering into reviews",id)
-            filtered_rows = restaurant_reviews_df[restaurant_reviews_df['id'] == id]
+            filtered_rows = accomodation_reviews_df[accomodation_reviews_df['id'] == id]
             # Display the filtered rows
             #print(filtered_rows)
             for index, row in filtered_rows.iterrows():
@@ -212,12 +215,12 @@ with open('..\\dataset\\accomodation_filtered.csv', 'r', encoding="utf-8") as cs
                 rating = row['rating']
                 text = row['text']
                 source_uri = pfs["kl-res"][source]
-                g.add((source_uri, a, Source))
+                #g.add((source_uri, a, Source))
                 g.add((review_uri, hasSource, source_uri))
-                g.add((source_uri, hasRating, Literal(rating,datatype=XSD.integer)))
-                g.add((source_uri, hasName, Literal(source,datatype=XSD.string)))
-                g.add((source_uri, hasText, Literal(text,datatype=XSD.string)))
-                g.add((source_uri, hasID, accomodation_uri))
+                g.add((review_uri, hasRating, Literal(rating,datatype=XSD.integer)))
+                g.add((review_uri, hasName, Literal(source,datatype=XSD.string)))
+                g.add((review_uri, hasText, Literal(text,datatype=XSD.string)))
+                #g.add((review_uri, hasID, accomodation_uri))
                 # Process or perform operations on the current row
                 #print(f"id: {id_value}, source: {source}, rating: {rating}, text: {text}")
         #Adding Geometry point as WKT
@@ -282,12 +285,12 @@ with open('..\\dataset\\attractions_combined.csv', 'r', encoding="utf-8") as csv
                 rating = row['rating']
                 text = row['text']
                 source_uri = pfs["kl-res"][source]
-                g.add((source_uri, a, Source))
+                #g.add((source_uri, a, Source))
                 g.add((review_uri, hasSource, source_uri))
-                g.add((source_uri, hasRating, Literal(rating,datatype=XSD.integer)))
-                g.add((source_uri, hasName, Literal(source,datatype=XSD.string)))
-                g.add((source_uri, hasText, Literal(text,datatype=XSD.string)))
-                g.add((source_uri, hasID, attraction_uri))
+                g.add((review_uri, hasRating, Literal(rating,datatype=XSD.integer)))
+                g.add((review_uri, hasName, Literal(source,datatype=XSD.string)))
+                g.add((review_uri, hasText, Literal(text,datatype=XSD.string)))
+                #g.add((review_uri, hasID, accomodation_uri))
                 # Process or perform operations on the current row
                 #print(f"id: {id_value}, source: {source}, rating: {rating}, text: {text}")
         #Adding Geometry point as WKT
@@ -317,7 +320,7 @@ with open('..\\dataset\\transport_filtered.csv', 'r', encoding="utf-8") as csvfi
         transport_uri = pfs["kl-res"][id]
 
         # Adding triples related to the restaurant
-        g.add((transport_uri, a,Attraction))
+        g.add((transport_uri, a,Transport))
         g.add((transport_uri, hasName, Literal(name,datatype=XSD.string)))
         
         if category != "":
@@ -328,7 +331,7 @@ with open('..\\dataset\\transport_filtered.csv', 'r', encoding="utf-8") as csvfi
         location_uri = pfs["kl-res"][location_name]
         g.add((location_uri, a, Location))
         g.add((location_uri,  hasName, Literal(location_name,datatype=XSD.string)))
-        g.add((location_uri,  hasAttraction, transport_uri))
+        g.add((location_uri,  hasTransport, transport_uri))
         g.add((transport_uri, hasLocation, location_uri))
         g.add((transport_uri, hasCost, Literal(price,datatype=XSD.integer)))
         
@@ -338,9 +341,9 @@ with open('..\\dataset\\transport_filtered.csv', 'r', encoding="utf-8") as csvfi
         g.add((review_uri, hasURL, Literal(review_url, datatype=XSD.string)))
         #filtering the reviews of the restaurant using its ID and adding it into graph
         id = int(id)
-        if id in attraction_reviews_df['id'].values:
+        if id in transport_reviews_df['id'].values:
             #print("entering into reviews",id)
-            filtered_rows = attraction_reviews_df[attraction_reviews_df['id'] == id]
+            filtered_rows = transport_reviews_df[transport_reviews_df['id'] == id]
             # Display the filtered rows
             #print(filtered_rows)
             for index, row in filtered_rows.iterrows():
@@ -351,12 +354,12 @@ with open('..\\dataset\\transport_filtered.csv', 'r', encoding="utf-8") as csvfi
                 rating = row['rating']
                 text = row['text']
                 source_uri = pfs["kl-res"][source]
-                g.add((source_uri, a, Source))
+                #g.add((source_uri, a, Source))
                 g.add((review_uri, hasSource, source_uri))
-                g.add((source_uri, hasRating, Literal(rating,datatype=XSD.integer)))
-                g.add((source_uri, hasName, Literal(source,datatype=XSD.string)))
-                g.add((source_uri, hasText, Literal(text,datatype=XSD.string)))
-                g.add((source_uri, hasID, transport_uri))
+                g.add((review_uri, hasRating, Literal(rating,datatype=XSD.integer)))
+                g.add((review_uri, hasName, Literal(source,datatype=XSD.string)))
+                g.add((review_uri, hasText, Literal(text,datatype=XSD.string)))
+                #g.add((review_uri, hasID, accomodation_uri))
                 # Process or perform operations on the current row
                 #print(f"id: {id_value}, source: {source}, rating: {rating}, text: {text}")
         #Adding Geometry point as WKT
