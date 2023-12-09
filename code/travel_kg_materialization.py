@@ -52,6 +52,8 @@ hasAttraction = pfs["kl-ont"]["hasAttraction"]
 hasCost = pfs["kl-ont"]["hasCost"]
 hasURL = pfs["kl-ont"]["hasURL"]
 hasReview = pfs["kl-ont"]["hasReview"]
+hasCurrency = pfs["kl-ont"]["hasCurrency"]
+hasCurrencyValue = pfs["kl-ont"]["hasCurrencyValue"]
 isA = pfs["kl-ont"]["isA"]
 
 # Initialize an empty graph
@@ -118,14 +120,17 @@ with open('..\\dataset\\restaurant_combined.csv', 'r', encoding="utf-8") as csvf
             food_category_uri = pfs["kl-res"][food_category]
             g.add((food_category_uri, a,Category))
             g.add((restaurant_uri, hasCategory, food_category_uri))
-            
         location_uri = pfs["kl-res"][location_name]
         g.add((location_uri, a, Location))
         g.add((location_uri,  hasName, Literal(location_name,datatype=XSD.string)))
         g.add((location_uri,  hasRestaurant, restaurant_uri))
         g.add((restaurant_uri, hasLocation, location_uri))
-        g.add((restaurant_uri, hasCost, Literal(price,datatype=XSD.integer)))
-        
+        #adding cost
+        financial_resource_uri = pfs["kl-res"][f"{'budget.usd'}.{id}"]
+        g.add((restaurant_uri, hasCost, financial_resource_uri))
+        g.add((financial_resource_uri, hasCurrency, Literal("USD",datatype=XSD.string)))
+        g.add((financial_resource_uri, hasCurrencyValue, Literal(price,datatype=XSD.integer)))
+
         review_uri = pfs["kl-res"][review_url]
         g.add((restaurant_uri, hasReview, review_uri))
         g.add((review_uri, a, Review))
@@ -194,7 +199,12 @@ with open('..\\dataset\\accomodation_filtered.csv', 'r', encoding="utf-8") as cs
         g.add((location_uri,  hasName, Literal(location_name,datatype=XSD.string)))
         g.add((location_uri,  hasAccomodation, accomodation_uri))
         g.add((accomodation_uri, hasLocation, location_uri))
-        g.add((accomodation_uri, hasCost, Literal(price,datatype=XSD.integer)))
+        #adding cost
+        financial_resource_uri = pfs["kl-res"][f"{'budget.usd'}.{id}"]
+        g.add((accomodation_uri, hasCost, financial_resource_uri))
+        g.add((financial_resource_uri, hasCurrency, Literal("USD",datatype=XSD.string)))
+        g.add((financial_resource_uri, hasCurrencyValue, Literal(price,datatype=XSD.integer)))
+
         
         review_uri = pfs["kl-res"][review_url]
         g.add((accomodation_uri, hasReview, review_uri))
@@ -264,7 +274,11 @@ with open('..\\dataset\\attractions_combined.csv', 'r', encoding="utf-8") as csv
         g.add((location_uri,  hasName, Literal(location_name,datatype=XSD.string)))
         g.add((location_uri,  hasAttraction, attraction_uri))
         g.add((attraction_uri, hasLocation, location_uri))
-        g.add((attraction_uri, hasCost, Literal(price,datatype=XSD.integer)))
+        #adding cost
+        financial_resource_uri = pfs["kl-res"][f"{'budget.usd'}.{id}"]
+        g.add((attraction_uri, hasCost, financial_resource_uri))
+        g.add((financial_resource_uri, hasCurrency, Literal("USD",datatype=XSD.string)))
+        g.add((financial_resource_uri, hasCurrencyValue, Literal(price,datatype=XSD.integer)))
         
         review_uri = pfs["kl-res"][review_url]
         g.add((attraction_uri, hasReview, review_uri))
@@ -333,7 +347,11 @@ with open('..\\dataset\\transport_filtered.csv', 'r', encoding="utf-8") as csvfi
         g.add((location_uri,  hasName, Literal(location_name,datatype=XSD.string)))
         g.add((location_uri,  hasTransport, transport_uri))
         g.add((transport_uri, hasLocation, location_uri))
-        g.add((transport_uri, hasCost, Literal(price,datatype=XSD.integer)))
+        #adding cost
+        financial_resource_uri = pfs["kl-res"][f"{'budget.usd'}.{id}"]
+        g.add((transport_uri, hasCost, financial_resource_uri))
+        g.add((financial_resource_uri, hasCurrency, Literal("USD",datatype=XSD.string)))
+        g.add((financial_resource_uri, hasCurrencyValue, Literal(price,datatype=XSD.integer)))
         
         review_uri = pfs["kl-res"][review_url]
         g.add((transport_uri, hasReview, review_uri))

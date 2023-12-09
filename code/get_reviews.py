@@ -47,7 +47,6 @@ with open(input_file, mode='r', newline='', encoding='utf-8') as csv_file:
     reader = csv.DictReader(csv_file)
     #print("reader is ",reader)
     for row in reader:
-        #print("row is ",row['reviews'])
         urls.append(row['reviews'])
         ids.append(row['id'])
 
