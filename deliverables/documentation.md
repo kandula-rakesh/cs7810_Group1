@@ -52,7 +52,7 @@ Source: [Restaurant Data] (https://www.kaggle.com/datasets/damienbeneschi/krakow
 #### Description
 The mode of transportation can affect the enjoyment the traveller experiences during their trip. They may not want to ride in public transportation and would rather drive themselves to anywhere they want to go at their destination. The traveller could also want their primary transportation to come in the form of walking so it would be better to know that so they can take a trip in a walkable city instead of a place where everything is far away from each other. Recognizing these transportation preferences helps travelers select modes that align with their comfort and travel style, ultimately enhancing their overall travel experience.
 
-![Transport](https://github.com/Rakesh-Sri/cs7810_Group1/blob/main/schema-diagrams/Transport.jpg)
+![Transport](https://github.com/Rakesh-Sri/cs7810_Group1/blob/main/schema-diagrams/Transport.png)
 
 #### Axioms
 * `Transport SubClassOf hasID some xsd:integer` <br />
@@ -144,7 +144,7 @@ Tourist spots would be things such as historical monuments, artistic statues, or
 #### Description
 Housing is important while on a vacation. This is where your belongings will be kept and where you will be sleeping. If your housing is in a bad part of town you may be worrying your entire trip whether or not something will get stolen. Also, if you can not sleep well in whatever housing you choose it will impact your experience as you most likely will not feel as good as you could if you got a full rest each night. Recognizing the significance of suitable accommodations in travel planning ensures that travelers have a secure and comfortable base during their journey, reducing concerns about safety and the quality of their rest, ultimately enhancing the overall travel experience.
 
-![Accommodation](https://github.com/Rakesh-Sri/cs7810_Group1/blob/main/schema-diagrams/Accomodation.jpg)
+![Accommodation](https://github.com/Rakesh-Sri/cs7810_Group1/blob/main/schema-diagrams/Accomodation.png)
 
 #### Axioms
 * `Accomodation SubClassOf hasID some xsd:integer`<br />
