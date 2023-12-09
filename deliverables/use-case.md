@@ -31,16 +31,22 @@ increase. This would also help travel agencies or travel blogs come up with best
 
 
 ## Competency Questions
-* How to query the Knowledge Graph (KG) to get the details of the location, tourist is visting? (expected_input: state, popular city, popular tourist destination, expected_output: details of the location includes, activities, popular tourist spots, accomodation etc).
-* How user can decide the mode of the transport (X), given his/her  budget (B)? (expected_input: float value, output: transport modes)
-* what are the activities(A) can be performed, in the location(Y), for eg: kayaking, rafting, sky-diving, trekking etc. (this can be further filtered by using Budget (B) as the constraint.)
-* List all the locations(Y), if user is interested to participate in specific activity(A), sorted the prices from low to high.
-* List all the tourist spots (TS), for the given location (Y). Eg: Beaches, Mountains, National Parks and Monuments, Buildings etc. (this can be further filtered by using Budget (B) as the constraint).
-* What type of accomodations/Housing (H) availble in Budget (B) for the location (Y).
-* How user can search nearby places/tourist attractions?(input: tourist_location, output: nearby locations) (depends on data supports this or not?)
-* Querying the KG, based on preferred activities for the current season.
-* Which are the destinations offer pristine beaches, clear waters or water activities.
-* Which location offers multi cuisine restaraunts, suitable for food lovers.
+* What are the details and specifications of a location that is to be visited ?
+* What can be the mode of transport for a given range of budget?
+* What kind of activities can be performed in a given location?
+* What are the locations that facilitate one particular activity, sorted from low to high based on price range?
+* What are the different tourist spots for a given location?
+* What type of accommodations are available in a budget range for a given location ?
+* Which locations offers multi-cuisine restaurants?
+
+### Added to scope
+* What are the top-rated accommodations, attractions, modes of transport & restaurants ?
+
+### Descoped Competency Questions
+* What are the nearby places/tourist attractions?
+* What are the preferred activities for the current season?
+* Which are the destinations that offer water activities ?
+
 
 ## Datasets for Europe Scope 
 * https://www.kaggle.com/datasets/damienbeneschi/krakow-ta-restaurans-data-raw/

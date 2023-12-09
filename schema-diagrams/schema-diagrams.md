@@ -1,7 +1,7 @@
 # Schema Diagrams
 
-## Accomodation
-![Accomodation](./Accomodation.png)
+## Accommodation
+![Accomodation](./Accommodation.jpg)
 
 ## Activity
 ![Activity](./Activity.png)
@@ -16,13 +16,13 @@
 ![Location](./LocationSchema.png)
 
 ## Transport
-![Transport](./Transport.png)
+![Transport](./Transport.jpg)
 
 ## Spatial Object
-![Spatial Object](./GeometrySpatialObject.png)
+![Spatial Object](./GeometrySpatialObject.jpg)
 
 ## Category
 ![Category](./Category.png)
 
 ## Review
-![Review](./Review.png)
+![Review](./Review.jpg)
