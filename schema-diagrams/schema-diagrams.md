@@ -18,5 +18,11 @@
 ## Transport
 ![Transport](./Transport.png)
 
+## Spatial Object
+![Spatial Object](./GeometrySpatialObject.png)
+
+## Category
+![Category](./Category.png)
+
 ## Review
 ![Review](./Review.png)

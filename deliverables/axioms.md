@@ -3,7 +3,7 @@
 ![all-schemas](../schema-diagrams/Combined_Schema.png)
 
 ## Accomodation
-![Accomodation](../schema-diagrams/Accomodation.jpg)
+![Accomodation](../schema-diagrams/Accomodation.png)
 
 ### Axioms
 * `Accomodation SubClassOf hasID some xsd:integer` <br />
@@ -92,7 +92,7 @@
 "An Attraction is of type SpatialObject"
 
 ## Transport
-![Transport](../schema-diagrams/Transport.jpg)
+![Transport](../schema-diagrams/Transport.png)
 
 ### Axioms
 * `Transport SubClassOf hasID some xsd:integer` <br />
@@ -107,7 +107,7 @@
 "A transport has exactly one cost of FinancialResource"
 
 ## Review
-![Review](../schema-diagrams/Review.jpg)
+![Review](../schema-diagrams/Review.png)
 
 ### Axioms
 * `Review SubClassOf hasURL some xsd:string` <br />
