@@ -1,6 +1,6 @@
-# Name of Ontology
+# Travel Knowledge Graph
 
-![all-schemas](relative/path/to/all/schemas)
+![all-schemas](../schema-diagrams/Combined_Schema.png)
 
 ## Accomodation
 ![Accomodation](../schema-diagrams/Accomodation.jpg)
