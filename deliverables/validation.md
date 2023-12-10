@@ -1,4 +1,7 @@
-* What can be the mode of transport for a given range of budget?
+## Deciding Mode of Transport
+
+* **Competency Question:** "What can be the mode of transport for a given range of budget?"
+* **Datasets:** "Tourpedia POI Dataset of 7 cities"
 
         PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
         PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
@@ -19,11 +22,14 @@
                   kl-ont:hasCurrencyValue ?price .
           FILTER(?price < 30)
         } LIMIT 10
-* SPARQL Query Output:
+* ___SPARQL Query Output:___
 
 ![Output](https://github.com/Rakesh-Sri/cs7810_Group1/blob/main/deliverables/images/CQ1_Output.jpg)
 
-* What kind of Activities can be performed at the given location?
+## Deciding on Activities in a selective location
+
+* **Competency Question:** "What kind of Activities can be performed at the given location?"
+* **Datasets:** "Tourpedia Attractions Dataset of 7 cities"
 
         PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
         PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
@@ -43,11 +49,14 @@
           FILTER (?location = kl-res:Amsterdam)
           
         } LIMIT 10
-* SPARQL Query Output:
+* ___SPARQL Query Output:___
 
 ![Output](https://github.com/Rakesh-Sri/cs7810_Group1/blob/main/deliverables/images/CQ2_Output.jpg)
 
-* What type of Accommodation options available in a budget range for given location?
+## Deciding the place to stay
+
+* **Competency Question:** "What type of Accommodation options available in a budget range for given location?"
+* **Datasets:** "Tourpedia Accommodation Dataset of 7 Cities"
 
         PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
         PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
@@ -67,13 +76,15 @@
           FILTER (?location = kl-res:London && ?price > 110 && ?price < 150)
         } LIMIT 10
 
-* SPARQL Query Output:
+* ___SPARQL Query Output:___
 
 ![Output](https://github.com/Rakesh-Sri/cs7810_Group1/blob/main/deliverables/images/CQ3_Output.jpg)
 
-* What are locations that facilitate a particular activity, sorted from low to high based on price range?
-  
-        PREFIX owl: <http://www.w3.org/2002/07/owl#>
+## Deciding Activities based on location with price from low to high
+
+* **Competency Question:** "What are locations that facilitate a particular activity, sorted from low to high based on price range?"
+* **Datasets:** "Tourpedia Attraction Dataset of 7 cities"
+ 
         PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
         PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
         PREFIX geo: <http://www.opengis.net/ont/geosparql#> 
@@ -98,12 +109,15 @@
         ORDER BY ASC(?price)
         LIMIT 10
 
-* SPARQL Query Output:
+* ___SPARQL Query Output:___
 
 ![Output](https://github.com/Rakesh-Sri/cs7810_Group1/blob/main/deliverables/images/CQ4_Output.jpg)
 
-  
-* What are the top rated accomodation in a particular location, along with its price?
+## Deciding top rated Accommodation in a selective location
+
+* **Competency Question:** "What are the top rated accomodation in a particular location, along with its price?"
+* **Datasets:** "Tourpedia Accommodation Dataset of 7 cities"
+
   
         PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
         PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
@@ -129,7 +143,7 @@
         ORDER BY DESC(?rating)
         LIMIT 10
 
-* SPARQL Query Output:
+* ___SPARQL Query Output:___
 
 ![Output](https://github.com/Rakesh-Sri/cs7810_Group1/blob/main/deliverables/images/CQ5_Output.jpg)
 
