@@ -153,7 +153,7 @@ Tourist spots would be things such as historical monuments, artistic statues, or
 #### Description
 Housing is important while on a vacation. This is where your belongings will be kept and where you will be sleeping. If your housing is in a bad part of town you may be worrying your entire trip whether or not something will get stolen. Also, if you can not sleep well in whatever housing you choose it will impact your experience as you most likely will not feel as good as you could if you got a full rest each night. Recognizing the significance of suitable accommodations in travel planning ensures that travelers have a secure and comfortable base during their journey, reducing concerns about safety and the quality of their rest, ultimately enhancing the overall travel experience.
 
-![Accommodation](../schema-diagrams/Accomodation.jpg)
+![Accommodation](../schema-diagrams/Accommodation.jpg)
 
 #### Axioms
 * `Accommodation SubClassOf hasName some xsd:string` <br />
